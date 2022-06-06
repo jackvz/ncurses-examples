@@ -22,7 +22,7 @@ Get [GNU Make](https://www.gnu.org/software/make/), [GCC](https://gcc.gnu.org/),
 choco install make mingw git cmake msys2 ninja powershell-core -y
 ```
 
-Get the `[Vcpkg](https://devblogs.microsoft.com/cppblog/vcpkg-a-tool-to-acquire-and-build-c-open-source-libraries-on-windows/)` tool, to get and build C++ open source libraries on Windows:
+Get the [`Vcpkg`](https://devblogs.microsoft.com/cppblog/vcpkg-a-tool-to-acquire-and-build-c-open-source-libraries-on-windows/) tool, to get and build C++ open source libraries on Windows:
 
 ```sh
 git clone --single-branch -b 2022.05.10 https://github.com/Microsoft/vcpkg
