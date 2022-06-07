@@ -34,7 +34,9 @@ Get NCURSES, and [build the `vcpkg` tool with `Mingw`](https://vcpkg.io/en/docs/
 ```sh
 .\vcpkg\vcpkg search ncurses
 # .\vcpkg\vcpkg install ncurses --triplet=x64-windows
-.\vcpkg\vcpkg install ncurses --triplet=x64-mingw-static
+.\vcpkg\vcpkg install ncurses  -v 5.7 --triplet=x64-mingw-static
+.\vcpkg\vcpkg list
+.\vcpkg\vcpkg integrate install
 ```
 
 ### Linux (Debian and Derivates) Requirements
@@ -43,10 +45,21 @@ Get NCURSES, and [build the `vcpkg` tool with `Mingw`](https://vcpkg.io/en/docs/
 sudo apt install libncurses-dev
 ```
 
+### FreeBSD Requirements
+
+Install [GNU Make](https://www.gnu.org/software/make/) and [GNU Bash](https://www.gnu.org/software/bash/):
+
+```sh
+sudo pkg install -y devel/gmake shells/bash
+# set USES=gmake
+# bash
+mkdir -p demo/exe
+```
+
 ## Build and Run
 
 ```
-make
+make # or gmake with FreeBSD
 cd demo/exe
 ./hello_world
 ```
