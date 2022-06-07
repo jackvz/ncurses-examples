@@ -41,6 +41,8 @@ Get NCURSES, and [build the `vcpkg` tool with `Mingw`](https://vcpkg.io/en/docs/
 
 ### Linux (Debian and Derivates) Requirements
 
+Install [the Debian developer's libraries for NCURSES](https://packages.debian.org/stable/libncurses-dev):
+
 ```sh
 sudo apt install libncurses-dev
 ```
