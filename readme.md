@@ -29,7 +29,7 @@ git clone --single-branch -b 2022.05.10 https://github.com/Microsoft/vcpkg
 .\vcpkg\bootstrap-vcpkg.bat
 ```
 
-Get NCURSES, and [build the `vcpkg` tool with `Mingw`](https://vcpkg.io/en/docs/users/mingw.html#mingw-native):
+Get NCURSES, and [build the `Vcpkg` tool with `Mingw`](https://vcpkg.io/en/docs/users/mingw.html#mingw-native):
 
 ```sh
 .\vcpkg\vcpkg search ncurses
